@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Header from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
-import Body from './Body';
-import Bodycard from './Bodycard';
+import {restaurantList} from './config';
+import Cardlist from './Components/Cardlist';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
-    <Bodycard/>
+    {/* <App /> */}
+   <Header/>
+   <Cardlist/>
   </React.StrictMode>
 );
 
